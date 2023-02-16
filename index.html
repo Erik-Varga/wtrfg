@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple To Do App</title>
+
+	<!-- Reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/icon" href="favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+        Zachary's Todo List <br>
+        <span><i class="fa-solid fa-book"></i></i></span>
+		Where The Red Fern Grows <br>
+		<a href="summary.html">Summary</a>
+    </header>
+
+	<div class="container">
+		<!-- Main header -->
+		<section>
+			<header id="main-header">
+				<div class="wrapper">
+					<h1>Today</h1>
+	
+					<form id="todo-form">
+						<input type="text" name="task-name" placeholder="e.g. Read book" autofocus>
+						<button type="submit">Add task</button>
+					</form>
+				</div>
+			</header>
+
+		</section>
+
+		<!-- Main content -->
+		<section>
+			<div class="wrapper" id="main-content">
+				<ul class="stats">
+					<li>
+						<span>Remaining</span>
+						<span id="remaining-tasks">0</span>
+					</li>
+					<li>
+						<span>Completed</span>
+						<span id="completed-tasks">0</span>
+					</li>
+					<li>
+						<span>Total</span>
+						<span id="total-tasks">0</span>
+					</li>
+				</ul>
+
+				<ul class="todos">
+				</ul>
+			</div>
+		</section>
+	</div>
+	
+
+	<!-- Footer -->
+	<footer>
+		<div>
+				<small>
+				<a href="https://github.com/Erik-Varga" target="_blank">&copy; <script>document.write(new Date().getFullYear())</script> SpudCode <i class="fa-brands fa-github"></i> Erik Varga | Web Developer</a>
+				</small>
+		</div>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>
